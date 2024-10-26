@@ -1,0 +1,114 @@
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5c2d91;
+    color: white;
+}
+
+.contact-info {
+    font-size: 0.9em;
+}
+
+.download-btn {
+    background-color: #6c3ec1;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Contenedor */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Barra lateral izquierda */
+.sidebar {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.position {
+    font-size: 1em;
+    color: #6c3ec1;
+}
+
+.personal-info p, .social-links a {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #6c3ec1;
+}
+
+/* Sección principal */
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 1.2em;
+    color: #6c3ec1;
+    border-bottom: 2px solid #6c3ec1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #e7f1ff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    color: #6c3ec1;
+    font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
